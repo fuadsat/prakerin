@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+.skin-blue .main-header .logo,
+.skin-blue .main-header .navbar{
+	background-color: red;
+}
+
+.skin-blue .main-header .logo:hover,
+.skin-blue .main-header .navbar:hover{
+	background-color: red;
+	color: yellow;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover{
+	background-color: yellow;
+	color: red;
+}

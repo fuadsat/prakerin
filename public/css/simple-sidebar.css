@@ -1,0 +1,143 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Toggle Styles */
+
+#wrapper-side {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper-side.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 293px;
+    min-height: 724px;
+    margin-left: -250px;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper-side.toggled #sidebar-wrapper {
+    width: 237px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper-side.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    top: 0;
+    width: 237px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 35px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #eaeaea;
+    background: #337ab7;
+    border-radius: 5px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: white;
+    background: red;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 45px;
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 5px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: white;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: red;
+}
+
+@media(min-width:768px) {
+    #wrapper-side {
+        padding-left: 0px;
+    }
+
+    #wrapper-side.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 237px;
+    }
+
+    #wrapper-side.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding-top: 0px;
+        position: relative;
+    }
+
+    #wrapper-side.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+.dropdown-menu{
+	margin-left: 0px;
+}
+.drop-main-menu{
+	top: 0;
+	margin-top: 38px;
+    margin-left: 14px;
+}
+.drop-sum-tl{
+	top: 0;
+	margin-top: 38px;
+    right: 0;
+    left: initial;
+    margin-right: 14px;
+    width: 82px;
+}

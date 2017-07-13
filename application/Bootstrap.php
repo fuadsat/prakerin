@@ -36,7 +36,17 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $view->headLink()->appendStylesheet($project.'/public/css/jquery.dataTables.min.css');
         $view->headLink()->appendStylesheet($project.'/public/css/fixedHeader.dataTables.min.css');
         $view->headLink()->appendStylesheet($project.'/public/css/fixedColumns.dataTables.min.css');
-        $view->headLink()->appendStylesheet($project.'/public/css/styling.css');
+        
+        $view->headLink()->appendStylesheet($project.'/public/font-awesome/css/font-awesome.css');
+        $view->headLink()->appendStylesheet($project.'/public/font-awesome/css/font-awesome.min.css');
+        
+        $view->headLink()->appendStylesheet($project.'/public/admin-lte/css/AdminLTE.min.css');
+        $view->headLink()->appendStylesheet($project.'/public/admin-lte/css/skins/_all-skins.min.css');
+        
+        $view->headLink()->appendStylesheet($project.'/public/css/simple-sidebar.css');
+//         $view->headLink()->appendStylesheet($project.'/public/css/styling.css');
+        
+        $view->headLink()->appendStylesheet($project.'/public/css/global.css');
     
         $view->headScript()->appendFile($project.'/public/js/jquery.min.js');
         $view->headScript()->appendFile($project.'/public/js/bootstrap.min.js');
@@ -49,6 +59,11 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $view->headScript()->appendFile($project.'/public/js/dataTables.fixedHeader.min.js');
         $view->headScript()->appendFile($project.'/public/js/dataTables.fixedColumns.min.js');
         $view->headScript()->appendFile($project.'/public/js/numeral.min.js');
+        
+        
+        $view->headScript()->appendFile($project.'/public/admin-lte/js/adminlte.min.js');
+        $view->headScript()->appendFile($project.'/public/admin-lte/js/demo.js');
+        
         $view->headScript()->appendFile($project.'/public/js/global.js');
         $view->headScript()->appendFile($project.'/public/js/event.js');
         $view->headScript()->appendFile($project.'/public/js/ajax.js');
