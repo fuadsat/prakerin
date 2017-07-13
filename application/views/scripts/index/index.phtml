@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="login-container">
+        <div id="output"></div>
+        <div class="avatar"></div>
+        <div class="txtlbl"></div>
+        <div class="form-box">
+            <form id="login-form" action="<?php echo $this->url(array('controller' => 'index', 'action' => 'index'), null, true); ?>" method="post">
+                <input name="nik" type="text" placeholder="NIK">
+                <input name="pin" type="password" placeholder="PIN">
+                <button class="btn btn-success btn-block login" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
